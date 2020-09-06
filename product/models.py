@@ -29,10 +29,10 @@ class CarEngine(models.Model):
 
 	power_graph = models.ImageField(upload_to='images/engine/', help_text="Upload The Image For The Power Graph")
 	# ECO
-	eco_torque_origin = models.IntegerField(help_text="Enter The Origin Value(Nm)")
-	eco_torque_difference = models.IntegerField(help_text="Enter The Difference Value(Nm)")
-	eco_estimated_fuel_reduction = models.IntegerField(help_text="Enter The Estimated Fuel Reduction(%)")
-	eco_price = models.IntegerField(help_text="Enter The Price(€)")
+	eco_torque_origin = models.IntegerField(help_text="Enter The Origin Value(Nm)", blank=True, null=True)
+	eco_torque_difference = models.IntegerField(help_text="Enter The Difference Value(Nm)", blank=True, null=True)
+	eco_estimated_fuel_reduction = models.IntegerField(help_text="Enter The Estimated Fuel Reduction(%)", blank=True, null=True)
+	eco_price = models.IntegerField(help_text="Enter The Price(€)", blank=True, null=True)
 	eco_description = models.TextField(help_text="Enter The Description For the ECO", blank=True, null=True)
 	# Stage 1
 	stage1_torque_origin = models.IntegerField(help_text="Enter The Origin Value(Nm)", blank=True, null=True)
