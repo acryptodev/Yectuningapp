@@ -119,27 +119,27 @@ EMAIL_HOST_USER = 'igrambilchester@gmail.com'
 EMAIL_HOST_PASSWORD = 'BillGates94415'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ibridge5_yectuning',
-        'USER': 'ibridge5_igor',
-        'PASSWORD': 'developer',
-        'HOST': '74.220.219.97',
-        'PORT': '3306',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'gp',
-#         'USER': 'gp',
-#         'PASSWORD': '?U5QF.d?~k4+}=99J6{V',
-#         'HOST': '35.223.187.129',
-#         'PORT': '5432',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'ibridge5_yectuning',
+#         'USER': 'ibridge5_igor',
+#         'PASSWORD': 'developer',
+#         'HOST': '74.220.219.97',
+#         'PORT': '3306',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6m3jhsgo1lsed',
+        'USER': 'qkxkflfqjvnlzr',
+        'PASSWORD': '433644d041ee0701bd60b800251da4ad9dcb07696ebb736e7837212538151370',
+        'HOST': 'ec2-54-224-124-241.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 # postgres://gp:?U5QF.d?~k4+}=99J6{V@35.223.187.129:5432/gp
 # mysql://ibridge5_igor:developer@74.220.219.97:3306/ibridge5_yectuning
 
