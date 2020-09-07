@@ -26,7 +26,7 @@ class CarEngine(models.Model):
 	engine_name = models.CharField(max_length=100, help_text="Enter The Engine Name")
 	engine_type = models.CharField(blank=True, max_length=100, help_text="Enter The Engine Type", choices=[('gas', 'Gasoline'), ('disel', 'Diesel Micro Hybrid'), ('hybrid', 'Hybrid')])
 	engine_status = models.CharField(max_length=100, blank=True, null=True, help_text="Enter The Engine Status", choices=[('new', 'New'), ('indev', 'In development')])
-	# power_graph = models.ImageField(upload_to='images/engine/', help_text="Upload The Image For The Power Graph")
+	power_graph = models.ImageField(upload_to='images/engine/', help_text="Upload The Image For The Power Graph")
 	# ECO
 	eco_torque_origin = models.IntegerField(help_text="Enter The Origin Value(Nm)", blank=True, null=True)
 	eco_torque_difference = models.IntegerField(help_text="Enter The Difference Value(Nm)", blank=True, null=True)
