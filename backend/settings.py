@@ -28,7 +28,7 @@ SECRET_KEY = 'c+opy0z!@g5$2bo%lzz#%opf-5*lja_wrxi7@^%4k@$0w1r#-)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yectuning.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['yectuningapp.herokuapp.com', '127.0.0.1:8000']
 
 
 # Application definition
@@ -168,7 +168,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 REST_USE_JWT = True
-LOGIN_REDIRECT_URL='https://yectuning.herokuapp.com/'
+LOGIN_REDIRECT_URL='https://yectuningapp.herokuapp.com/'
 REST_SESSION_LOGIN = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_REQUIRED = True
